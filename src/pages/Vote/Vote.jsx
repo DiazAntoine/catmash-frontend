@@ -2,6 +2,7 @@ import {useState, useEffect, useContext} from "React"
 import {HeaderContext} from "../../components/Header/Header"
 import CatCard from "../../components/CatCard/CatCard"
 import "./Vote.css"
+import backendPath from "../../Constant"
 
 const Vote = () => {
 
@@ -10,7 +11,7 @@ const Vote = () => {
     const [cats, setCats] = useState(null);
 
     const fetchTwoRandomCats = async () => {
-        const response = await fetch("http://localhost:8080/cats/get_two_random_cats");
+        const response = await fetch(backendPath + "/cats/get_two_random_cats");
         const responseParsed = await response.json();
         setCats(responseParsed);
       }

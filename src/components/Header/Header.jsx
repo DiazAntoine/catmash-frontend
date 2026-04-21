@@ -3,6 +3,7 @@ import { Outlet, NavLink } from "react-router-dom"
 import { useLocation } from "react-router-dom";
 import {useState, useEffect} from "React"
 import './Header.css'
+import backendPath from '../../Constant'
 
 export const HeaderContext = createContext(null);
 
@@ -12,7 +13,7 @@ const Header = () => {
   const location = useLocation();
 
    const fetchNbrVotes = async () => {
-      const response = await fetch("http://localhost:8080/votes/count");
+      const response = await fetch(backendPath + "/votes/count");
       const responseParsed = await response.json();
       setnbrVotes(responseParsed);
     };

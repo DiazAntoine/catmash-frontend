@@ -1,5 +1,6 @@
 import {useState, useEffect} from "React"
 import './Ranking.css'
+import backendPath from '../../Constant'
 
 const Ranking = () => {
 
@@ -7,7 +8,7 @@ const Ranking = () => {
 
     useEffect(() => {
         const fetchRanking = async () => {
-            const response = await fetch("http://localhost:8080/cats/ranking");
+            const response = await fetch(backendPath + "/cats/ranking");
             const responseParsed = await response.json();
             setCats(responseParsed);
         }
