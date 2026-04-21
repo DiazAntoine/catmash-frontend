@@ -1,7 +1,7 @@
 import { createContext } from 'react';
 import { Outlet, NavLink } from "react-router-dom"
 import { useLocation } from "react-router-dom";
-import {useState, useEffect} from "React"
+import {useState, useEffect} from "react"
 import './Header.css'
 import backendPath from '../../Constant'
 

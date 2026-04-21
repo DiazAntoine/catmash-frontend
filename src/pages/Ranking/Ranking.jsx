@@ -1,4 +1,4 @@
-import {useState, useEffect} from "React"
+import {useState, useEffect} from "react"
 import './Ranking.css'
 import backendPath from '../../Constant'
 

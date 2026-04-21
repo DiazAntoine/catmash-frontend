@@ -1,4 +1,4 @@
-import {useState, useEffect, useContext} from "React"
+import {useState, useEffect, useContext} from "react"
 import {HeaderContext} from "../../components/Header/Header"
 import CatCard from "../../components/CatCard/CatCard"
 import "./Vote.css"
