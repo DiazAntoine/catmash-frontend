@@ -22,7 +22,7 @@ const Vote = () => {
 
     const handleClick = async (e, winnerId, loserId) =>  {
         e.preventDefault();
-        await fetch("http://localhost:8080/votes/vote", {
+        await fetch(backendPath + "/votes/vote", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ winnerId, loserId })
