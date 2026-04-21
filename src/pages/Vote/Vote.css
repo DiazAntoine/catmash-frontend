@@ -1,0 +1,13 @@
+.vote-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    margin-top : 150px;
+}
+
+.vote-title {
+    text-align:center;
+    margin : 20px;
+}
